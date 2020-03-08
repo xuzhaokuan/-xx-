@@ -1,0 +1,149 @@
+.category {
+    display: flex;
+    flex-direction: column;
+
+    .category-header {
+        border-bottom: 1px #ccc solid;
+    }
+
+    .category-main {
+        display: flex;
+        position: absolute;
+        top: 1.47rem;
+        bottom: 1rem;
+        width: 100%;
+        overflow: hidden;
+
+        .category-aside {
+            background-color: #f4f4f4;
+            width: 2.5rem;
+            flex: 0 0 2.5rem;
+            align-items: center;
+            overflow-y: auto;
+            ul {
+                list-style: none;
+                text-align: left;
+
+                li {
+                    pointer-events: auto;
+                    padding: 0.35rem 0;
+                    border-bottom: solid 2px #e8e9e8;
+                    position: relative;
+
+                    span {
+                        line-height: 0.57rem;
+                        border-left: solid 0.1rem transparent;
+                        padding: 0.146rem 0.32rem;
+                        font-size: 0.4rem;
+                        color: #666666;
+                    }
+
+                }
+
+                li:hover {
+                    background: #fff;
+
+                    span {
+                        border-left-color: #3cb963;
+                        font-weight: bold;
+                        font-size: 0.4rem;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+
+        .category-content {
+            position: absolute;
+            left: 2.437rem;
+            right: 0;
+            top: 1.36rem;
+            bottom: 0rem;
+            overflow-y: auto;
+            transform: translateZ(0);
+            text-align: left;
+
+            .r-list {
+                transition-duration: 0ms;
+                transform: translate(0px, 0px) scale(1) translateZ(0px);
+                transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+                >p {
+                    display: inline-block;
+                    padding: 0.4688rem;
+                    border-left: 3px solid #d9dde1;
+                    height: 0.471rem;
+                    width: 100%;
+                    font-size: 0.32rem;
+                    color: #93999f;
+                    background-color: #f3f5f7;
+                    padding-left: 0.1312rem;
+                }
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        padding: 0.1688rem 0.1688rem 0 0.1688rem;
+
+                        .item {
+                            justify-content: flex-start;
+                            border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+                            padding-bottom: 0.469rem;
+                            position: relative;
+                            display: flex;
+
+                            >p {
+                                img {
+                                    width: 1.904rem;
+                                    height: 1.904rem;
+                                    border-radius: 0.04rem;
+                                }
+                            }
+
+                            .item-right {
+                                margin-left: 0.1rem;
+
+                                .item-name {
+                                    font-size: 0.393rem;
+                                    line-height: 0.5333rem;
+                                    color: #07111b;
+                                    margin-bottom: 0.075rem;
+                                }
+
+                                .item-desc {
+                                    padding: 0.1rem;
+                                    line-height: 0.4267rem;
+                                    font-size: 0.3rem;
+                                    color: #93999f;
+                                    margin-bottom: 0.07rem;
+                                }
+
+                                .item-price {
+                                    display: inline;
+                                    font-size: 0.35rem;
+                                    color: red;
+                                }
+
+                                .item-originprice {
+                                    display: inline;
+                                    padding-left: 0.234rem;
+                                    text-decoration: line-through;
+                                    font-size: 0.32rem;
+                                    color: #b2b2b2;
+                                }
+
+                                .anticon {
+                                    position: absolute;
+
+                                    top: 1.6rem;
+                                    right: 0.281rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

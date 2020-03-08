@@ -1,0 +1,26 @@
+.admin {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    .main {
+        flex: 1;
+    }
+    footer {
+        height: 1rem;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        .nav {
+            display: flex;
+            margin: 0;
+            height: 100%;
+            li {
+                box-sizing: border-box;
+                border-left: 1px #000 solid;
+                width: 20%;
+                list-style: none;
+                line-height: 1rem;
+            }
+        }
+    }
+}
